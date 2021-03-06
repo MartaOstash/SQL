@@ -1,0 +1,81 @@
+Class1
+Database Details for Connection
+Connection Name: HRM
+Connection Method: Standard (TCP/IP)
+Host Name: 3.237.189.167
+Port: 3306
+Username: syntax_hrm
+Password: syntaxhrm123
+======================
+Database:
+A program that helps us to store and manipulate data(all the text,
+figures,images that we add to out app).
+
+What SQL:
+SQL is structured query language that we use to manipulate data
+inside our databases.
+SQL is similar to Java and SQL workbench is similar to IntelliJ.
+SQL is a language that is used to communicate with our database.
+
+==================================================================
+Our apps consist of frontend, backend and database
+They are independent to each other.
+As a SW Automation Engineer Tester we need to test our backend and
+databases as well.
+
+Why do we need Database?
+In Excel we do not have control over the individual columns
+or fields and they cannot handle large amount of data.
+
+Database can handle very large amount of data.
+We can have control over individual columns, rows and the tables.
+We may allow some of the user to see only certain tables columns
+and rows.
+Database are very secure as compare to excel files or any other
+files.
+
+/(Primary key - the unique key
+Foreign key - the primary key from a diff page that is referring to it.
+All of the tables in relational database are connected.)/
+
+DataBases will contain tables and inside the tables we will have special
+column called primaryKey that will contain unique numbers/text to identify
+all of the rows uniquely inside that table.
+These columns in the tase table are called primary keys and when referred in
+other tables they're called  foreign keys.
+
+
+Commands to retrieve data:
+1st line -please use this database in this query;
+SELECT all from this this table  SELECT * FROM hs_hr_employees;---name;
+---will return all the rows and columns from the table;
+
+
+
+Class2
+
+Why SQL what is SQL?
+It's a structured query language that helps us to store and manipulate data.
+
+# sorts the data in ascending order
+SELECT * FROM Customers order by CustomerName asc;
+
+#sorts the data in asc order based on multiple columns
+SELECT * FROM Customers order by CustomerName asc;
+
+IN case of the OR any of teh criteria should be met;
+IN the case of AND - ALL the criteria should be true;
+
+#contains ol written together no matter how many char are before/after them
+   SELECT * FROM hs_hr_employees where emp_firstname like '%ol%'
+
+
+ #starts from these letters
+    SELECT * FROM hs_hr_employees where emp_firstname like 'mar%' ;
+
+ #ends with these letters
+     SELECT * FROM hs_hr_employees where emp_firstname like '%mar' ;
+
+     #return all the rows for which i don't care about the first 5 numbers,
+     and  last 3 but there should be 02(the data format is 1111-11-11)
+     SELECT * FROM hs_hr_employees where emp_birthday like '____02___' ;
